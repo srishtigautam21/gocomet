@@ -14,3 +14,8 @@
   column-gap: 2rem;
   padding: 1rem;
 }
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}

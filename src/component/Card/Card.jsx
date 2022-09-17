@@ -1,10 +1,22 @@
-import React from "react";
+import { useState } from "react";
 import "./Card.css";
 
+import { useNavigate } from "react-router-dom";
+import { DetailsPage } from "../../pages/DetailsPage/DetailsPage";
+
 const Card = ({ product }) => {
+  const navigate = useNavigate();
   const { brand, category, price } = product;
+
+  const [navigateToDetailsPage, setNavigateToDetailsPage] = useState(false);
+
   return (
-    <div>
+    <div
+      onClick={() => {
+        setNavigateToDetailsPage(true);
+        navigate("/productDetailsPage");
+      }}
+    >
       <div className='parent-positioning card-container'>
         {/* <img src={image} alt={name}></img> */}
         <div className='inside-container '>
@@ -24,6 +36,7 @@ const Card = ({ product }) => {
           ></i>
           {/* )} */}
         </div>
+        {navigateToDetailsPage && <DetailsPage product={product} />}
       </div>
     </div>
   );

@@ -1,8 +1,14 @@
-import React from "react";
+import { useState } from "react";
 import { CartIcon, HeartIcon } from "../../Assets/Svg/AllSvg";
 import "./Navbar.css";
+import { CartModal } from "../../pages/Modal/CartModal";
+import { useCart } from "../../context/CartContext";
 
 const Navbar = () => {
+  const [openModalCart, setOpenModalCart] = useState(false);
+  const { state } = useCart();
+  const { cartlistitem } = state;
+  const totalCartQuantity = cartlistitem.length;
   return (
     <div>
       <nav className='nav-component nav-padding'>
@@ -25,9 +31,12 @@ const Navbar = () => {
           <li className='list-style icons-alignment'>
             <div className='link'>
               <div className='ecom-badge-wrapper'>
-                <CartIcon className=' nav-icons' />
+                <CartIcon
+                  className=' nav-icons'
+                  onClick={() => setOpenModalCart((open) => !open)}
+                />
                 <div className='badge icon-over-badge'>
-                  {/* {Number(totalCartQuantity)} */}0
+                  {Number(totalCartQuantity)}
                 </div>
               </div>
             </div>
@@ -43,6 +52,7 @@ const Navbar = () => {
             </div>
           </li>
         </ul>
+        {openModalCart && <CartModal setOpenModalCart={setOpenModalCart} />}
       </nav>
     </div>
   );

@@ -5,6 +5,7 @@ const products = [
     brand: "Roadster",
     price: 555,
     category: "Men Slim Fit Casual Shirt",
+    sortBy: "recommended",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const products = [
     brand: "Roadster",
     price: 2189,
     category: "Men Slim Fit Casual Shirt",
+    sortBy: "new",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const products = [
     brand: "Arrow",
     price: 889,
     category: "Men Cotton Fit Casual Shirt",
+    sortBy: "recommended",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const products = [
     brand: "ONLY",
     price: 1950,
     category: "Men Cotton Fit Casual Shirt",
+    sortBy: "new",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const products = [
     brand: "ONLY",
     price: 789,
     category: "Women Casual Shirt",
+    sortBy: "recommended",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const products = [
     brand: "Roadster",
     price: 950,
     category: "Women Casual Shirt",
+    sortBy: "new",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const products = [
     brand: "VeroModa",
     price: 1887,
     category: "Casual Shirt",
+    sortBy: "new",
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const products = [
     brand: "VeroModa",
     price: 1350,
     category: "Casual Shirt",
+    sortBy: "recommended",
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ const products = [
     brand: "Arrow",
     price: 1050,
     category: "Striped Casual Shirt",
+    sortBy: "new",
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ const products = [
     brand: "Arrow",
     price: 2240,
     category: "Striped Casual Shirt",
+    sortBy: "recommended",
   },
   {
     id: 11,
@@ -75,6 +85,7 @@ const products = [
     brand: "ONLY",
     price: 2800,
     category: "High Low Casual Shirt",
+    sortBy: "new",
   },
   {
     id: 12,
@@ -82,6 +93,7 @@ const products = [
     brand: "Roadster",
     price: 2560,
     category: "High Low Casual Shirt",
+    sortby: "recommended",
   },
 ];
 export { products };

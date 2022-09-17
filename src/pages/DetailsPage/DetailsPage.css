@@ -1,0 +1,12 @@
+.DetailsPage {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
