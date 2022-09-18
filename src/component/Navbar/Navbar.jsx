@@ -20,7 +20,7 @@ const Navbar = () => {
     <div>
       <nav className='nav-component nav-padding'>
         <div className='content-header'>
-          <Link to='/' className='component-libraryl-link'>
+          <Link to='/' className='header'>
             Fake Myntra
           </Link>
           {/* <img src={logo} alt='logo' /> */}
@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className='link'>
               <div className='ecom-badge-wrapper'>
                 <CartIcon
-                  className=' nav-icons'
+                  className='navbar-icons'
                   onClick={() => setOpenModalCart((open) => !open)}
                 />
                 <div className='badge icon-over-badge'>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <div className='link ecom-link-color' to='/wishlist'>
               <div className='ecom-badge-wrapper'>
                 <HeartIcon
-                  className='nav-icons'
+                  className='navbar-icons'
                   onClick={() => setOpenModalWishlist((open) => !open)}
                 />
                 <div className='badge icon-over-badge'>

@@ -1,3 +1,7 @@
+.header {
+  text-decoration: none;
+  color: var(--PRIMARY-COLOR);
+}
 .nav-padding {
   padding: 0 2rem 0 2rem;
 }
@@ -24,12 +28,12 @@
 .home-alignment {
   margin: 4.9rem 2rem 0 0;
 }
-.ecom-input {
+/* .ecom-input {
   max-width: 100%;
 
   width: 40rem;
-}
-.input-update {
+} */
+/* .input-update {
   padding: 7px 7px;
   border: 2px solid var(--BOX-SHADOW-LIGHTER);
 }
@@ -39,7 +43,7 @@
   background-color: var(--COLOR-PRIMARY);
   color: var(--COLOR-WHITE);
   border: 0;
-}
+} */
 .link:hover {
   cursor: pointer;
   color: var(--PRIMARY-HOVER);
@@ -58,6 +62,17 @@
   /* margin-bottom: 1rem; */
 }
 /* CSS for badge alignment */
+/* .nav-icons {
+  font-size: 2.5rem;
+  color:var(--COLOR-PRIMARY);
+} */
+.navbar-icons {
+  font-size: 2.5rem;
+  color: var(--ICON-COLOR);
+}
+.navbar-icons:hover {
+  color: var(--ICON-HOVER);
+}
 .icon-over-badge {
   left: 2rem;
   bottom: 1.5rem;
@@ -65,10 +80,13 @@
 .ecom-badge-wrapper {
   position: relative;
 }
-.dropdown {
-  position: relative;
+.badge {
+  background-color: var(--PRIMARY-COLOR);
 }
-.menu-container {
+/* .dropdown {
+  position: relative;
+} */
+/* .menu-container {
   width: 8vw;
   min-height: 8vh;
   background-color: var(--darkerofseconadary);
@@ -87,4 +105,4 @@
 }
 .content-color {
   color: var(--NOTIFICATION-COLOR);
-}
+} */

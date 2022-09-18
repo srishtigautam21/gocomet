@@ -5,4 +5,8 @@
 }
 :root {
   --BACKGROUND-MODAL: rgba(143, 139, 139, 0.7);
+  --ICON-COLOR: rgb(175, 174, 174);
+  --ICON-HOVER: rgb(128, 128, 128);
+  --PRIMARY-COLOR: #f568c3;
+  --PRIMARY-HOVER: #b71d81;
 }
