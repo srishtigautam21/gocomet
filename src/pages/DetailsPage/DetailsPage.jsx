@@ -3,8 +3,10 @@ import "./DetailsPage.css";
 import { useSingleProduct } from "../../context/SingleProductContext";
 import { useCart } from "../../context/CartContext";
 import { useWishlist } from "../../context/WishlistContext";
+import { useDocumentTitle } from "../../useDocumentTitle";
 
 const DetailsPage = () => {
+  useDocumentTitle("Single Product Page");
   const { productSelected } = useSingleProduct();
   const { brand, category, price } = productSelected;
   const { dispatch, state } = useCart();
