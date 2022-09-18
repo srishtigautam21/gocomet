@@ -30,9 +30,9 @@ const getPriceFilter = (brandsFilterData, filterByPrice) => {
 
 const getGenderFilter = (priceFilterData, sortByGender) => {
   if (sortByGender === "men") {
-    return priceFilterData.filter((product) => product.type === sortByGender);
+    return priceFilterData.filter((product) => product.type === "men");
   } else if (sortByGender === "women") {
-    return priceFilterData.filter((product) => product.type === sortByGender);
+    return priceFilterData.filter((product) => product.type === "women");
   } else {
     return priceFilterData;
   }

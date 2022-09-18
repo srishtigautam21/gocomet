@@ -13,9 +13,13 @@ const ProductsPage = () => {
         <SideBar />
       </aside>
       <div className='vertical-cards cards-wrapper'>
-        {finalFilterData.map((product) => {
-          return <Card key={product.id} product={product} />;
-        })}
+        {finalFilterData.length !== 0 ? (
+          finalFilterData.map((product) => {
+            return <Card key={product.id} product={product} />;
+          })
+        ) : (
+          <div>There are no matching products</div>
+        )}
       </div>
     </div>
   );

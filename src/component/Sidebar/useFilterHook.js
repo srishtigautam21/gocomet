@@ -27,9 +27,9 @@ const useFilterHook = () => {
 
   const finalFilterData = getFinalFilter(genderFilterData, sortBy);
 
-  if (finalFilterData.length === 0) {
-    return updatedProductList;
-  }
+  // if (finalFilterData.length === 0) {
+  //   return updatedProductList;
+  // }
   return finalFilterData; //Final data after all filters are applied
 };
 export { useFilterHook };
