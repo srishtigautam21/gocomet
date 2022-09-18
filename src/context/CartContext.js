@@ -12,14 +12,14 @@ const CartProvider = ({ children }) => {
       case "ADD_TO_CART":
         return {
           ...state,
-          cartlistitem:
-            state.cartlistitem.findIndex(
-              (item) => item.id === action.payload.id
-            ) === -1
-              ? [...state.cartlistitem, action.payload]
-              : state.cartlistitem.filter(
-                  (item) => item.id !== action.payload.id
-                ),
+          cartlistitem: [...state.cartlistitem, action.payload],
+          // state.cartlistitem.findIndex(
+          //   (item) => item.id === action.payload.id
+          // ) === -1
+          //   ? [...state.cartlistitem, action.payload]
+          //   : state.cartlistitem.filter(
+          //       (item) => item.id !== action.payload.id
+          //     ),
         };
 
       //   case "INCREMENT":
@@ -42,7 +42,9 @@ const CartProvider = ({ children }) => {
       case "REMOVE_FROM_CART":
         return {
           ...state,
-          cartlistitem: action.productCard,
+          cartlistitem: state.cartlistitem.filter(
+            (item) => item.id !== action.payload.id
+          ),
         };
 
       default:

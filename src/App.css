@@ -1,23 +1,8 @@
-/* .home-page {
-  display: grid;
-  min-height: 100vh;
-  background-color: var(--VIDEO-LIB-BACKGROUND-COLOR);
-}
-.grid-container {
-  grid-template-columns: 0.1fr 2fr;
-  grid-template-rows: 0.2fr 3fr;
-  grid-template-areas:
-    "navbar navbar"
-    "sidebar main-content"
-    "sidebar main-content";
-}
-.navbar {
-  grid-area: navbar;
-  box-shadow: 2px 2px 10px var(--BOX-SHADOW-LIGHTER);
-  background-color: var(--COLOR-WHITE);
-} */
 .homepage {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+:root {
+  --BACKGROUND-MODAL: rgba(143, 139, 139, 0.7);
 }

@@ -1,12 +1,19 @@
-.DetailsPage {
+.Details-page {
   display: flex;
   gap: 2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 .product-details {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: center;
+
   justify-content: center;
+  min-width: 60vh;
+}
+.Details-page img {
+  width: 100%;
+  max-width: 70rem;
+  height: 50rem;
+  object-fit: contain;
 }

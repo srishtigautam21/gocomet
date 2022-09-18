@@ -25,3 +25,9 @@
   border: 0;
   cursor: pointer;
 }
+.horizontal-cards {
+  display: flex;
+  gap: 1.5rem;
+  overflow-y: scroll;
+  padding: 1rem;
+}

@@ -26,7 +26,7 @@ const Card = ({ product }) => {
           <h3>{brand}</h3>
 
           <p>{category}</p>
-          <div>{price}</div>
+          <div>Rs. {price}</div>
           {isInWishlist === -1 ? (
             <i
               className='fa fa-heart-o icon-btn icon-size icon-overlay'
