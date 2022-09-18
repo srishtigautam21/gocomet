@@ -1,6 +1,6 @@
 import { useContext, createContext, useState } from "react";
 
-import { products } from "../Database";
+import products from "../Database.json";
 
 const DataBase = createContext({});
 

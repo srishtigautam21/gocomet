@@ -1,13 +1,10 @@
 import React from "react";
 import "./DetailsPage.css";
-import { useCart } from "../../context/CartContext";
+import { useSingleProduct } from "../../context/SingleProductContext";
 
-const DetailsPage = ({ product }) => {
-  console.log(product);
-  const { brand, category, price } = product;
-  const { dispatch, state } = useCart();
-  const { cartlistitem } = state;
-  const isInCart = cartlistitem.findIndex((prod) => prod._id === product._id);
+const DetailsPage = () => {
+  const { productSelected } = useSingleProduct();
+  const { brand, category, price } = productSelected;
   return (
     <div className='Details-page'>
       {/* <img src="" alt="" /> */}
@@ -15,7 +12,7 @@ const DetailsPage = ({ product }) => {
         <h3>{brand}</h3>
         <p>{category}</p>
         <div>{price}</div>
-        {isInCart === -1 ? (
+        {/* {isInCart === -1 ? (
           <button
             onClick={() => dispatch({ type: "ADD_TO_CART", payload: product })}
             className='button card-button ecom-card-button'
@@ -26,7 +23,7 @@ const DetailsPage = ({ product }) => {
           <button className='button outline-button card-button ecom-card-button'>
             Remove from Cart
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );

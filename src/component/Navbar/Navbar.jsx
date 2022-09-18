@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CartIcon, HeartIcon } from "../../Assets/Svg/AllSvg";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { CartModal } from "../../pages/Modal/CartModal";
 import { useCart } from "../../context/CartContext";
@@ -19,7 +20,9 @@ const Navbar = () => {
     <div>
       <nav className='nav-component nav-padding'>
         <div className='content-header'>
-          <div className='component-libraryl-link'>Fake Myntra</div>
+          <Link to='/' className='component-libraryl-link'>
+            Fake Myntra
+          </Link>
           {/* <img src={logo} alt='logo' /> */}
         </div>
         <ul className='nav-list-items-flex'>

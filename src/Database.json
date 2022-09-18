@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "type": "men",
+    "image": "https://www.muftijeans.in/media/catalog/product/cache/72ecbf8444b2c4d1e625f30416db39ce/1/_/1_mfs-13146-p-white-black_2.jpg",
+    "brand": "Roadster",
+    "price": 555,
+    "category": "Men Slim Fit Casual Shirt",
+    "sortBy": "recommended"
+  },
+  {
+    "id": 2,
+    "type": "men",
+    "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2029164/2017/8/22/11503394722916-Hancock-White-Solid-Cotton-Slim-Fit-Formal-Shirt-6321503394722740-1.jpg",
+    "brand": "Roadster",
+    "price": 2189,
+    "category": "Men Slim Fit Casual Shirt",
+    "sortBy": "new"
+  },
+  {
+    "id": 3,
+    "type": "men",
+    "image": "http://cdn.shopify.com/s/files/1/0029/1887/5193/files/New-Thumbnail---Michael_1200x1200.jpg?v=1548084485",
+    "brand": "Arrow",
+    "price": 889,
+    "category": "Men Cotton Fit Casual Shirt",
+    "sortBy": "recommended"
+  },
+  {
+    "id": 4,
+    "type": "men",
+    "image": "https://m.media-amazon.com/images/I/41X661d3rQL.jpg",
+    "brand": "ONLY",
+    "price": 1950,
+    "category": "Men Cotton Fit Casual Shirt",
+    "sortBy": "new"
+  },
+  {
+    "id": 5,
+    "type": "women",
+
+    "brand": "ONLY",
+    "price": 789,
+    "category": "Women Casual Shirt",
+    "sortBy": "recommended"
+  },
+  {
+    "id": 6,
+    "type": "women",
+
+    " brand": "Roadster",
+    "price": 950,
+    "category": "Women Casual Shirt",
+    "sortBy": "new"
+  },
+  {
+    "id": 7,
+    "type": "women",
+
+    "brand": "VeroModa",
+    "price": 1887,
+    "category": "Casual Shirt",
+    "sortBy": "new"
+  },
+  {
+    "id": 8,
+    "type": "women",
+
+    "brand": "VeroModa",
+    "price": 1350,
+    "category": "Casual Shirt",
+    "sortBy": "recommended"
+  },
+  {
+    "id": 9,
+    "type": "men",
+
+    "brand": "Arrow",
+    "price": 1050,
+    "category": "Striped Casual Shirt",
+    "sortBy": "new"
+  },
+  {
+    "id": 10,
+    "type": "men",
+
+    "brand": "Arrow",
+    "price": 2240,
+    "category": "Striped Casual Shirt",
+    "sortBy": "recommended"
+  },
+  {
+    "id": 11,
+    "type": "women",
+
+    "brand": "ONLY",
+    "price": 2800,
+    "category": "High Low Casual Shirt",
+    "sortBy": "new"
+  },
+  {
+    "id": 12,
+    "type": "women",
+
+    "brand": "Roadster",
+    "price": 2560,
+    "category": "High Low Casual Shirt",
+    "sortby": "recommended"
+  }
+]

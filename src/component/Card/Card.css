@@ -1,7 +1,7 @@
 .parent-positioning img {
   width: 100%;
   height: 25rem;
-  object-fit: cover;
+  object-fit: contain;
   /* border-top-right-radius: 1rem;
   border-top-left-radius: 1rem; */
 }
