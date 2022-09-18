@@ -3,13 +3,15 @@ import "./Card.css";
 
 import { useNavigate } from "react-router-dom";
 import { DetailsPage } from "../../pages/DetailsPage/DetailsPage";
+import { useWishlist } from "../../context/WishlistContext";
 
 const Card = ({ product }) => {
   const navigate = useNavigate();
-  const { brand, category, price } = product;
-
+  const { brand, category, price, image } = product;
+  const { wishliststate, wishlistdispatch } = useWishlist();
+  const { wishlistitem } = wishliststate;
   const [navigateToDetailsPage, setNavigateToDetailsPage] = useState(false);
-
+  const isInWishlist = wishlistitem.findIndex((item) => item.id === product.id);
   return (
     <div
       onClick={() => {
@@ -18,25 +20,34 @@ const Card = ({ product }) => {
       }}
     >
       <div className='parent-positioning card-container'>
-        {/* <img src={image} alt={name}></img> */}
+        <img src={image} alt={brand}></img>
         <div className='inside-container '>
           <h3>{brand}</h3>
 
           <p>{category}</p>
           <div>{price}</div>
-          {/* {isInFavourites === -1 ? ( */}
-          <i
-            className='fa fa-heart-o icon-btn icon-size icon-overlay'
-            //   onClick={() => addToFavourites(data)}
-          ></i>
-          {/* ) : ( */}
-          <i
-            className='fa fa-heart icon-btn icon-size filled-icon-overlay'
-            //   onClick={() => removeFromFavourites(id)}
-          ></i>
-          {/* )} */}
+          {isInWishlist === -1 ? (
+            <i
+              className='fa fa-heart-o icon-btn icon-size icon-overlay'
+              onClick={(e) => {
+                e.stopPropagation();
+                wishlistdispatch({ type: "ADD_TO_WISHLIST", payload: product });
+              }}
+            ></i>
+          ) : (
+            <i
+              className='fa fa-heart icon-btn icon-size filled-icon-overlay'
+              onClick={(e) => {
+                e.stopPropagation();
+                wishlistdispatch({
+                  type: "REMOVE_FROM_WISHLIST",
+                  payload: product,
+                });
+              }}
+            ></i>
+          )}
         </div>
-        {navigateToDetailsPage && <DetailsPage product={product} />}
+        {/* {navigateToDetailsPage && <DetailsPage product={product} />} */}
       </div>
     </div>
   );

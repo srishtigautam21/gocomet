@@ -5,6 +5,7 @@ import App from "./App";
 import { DataBaseProvider } from "./context/Db";
 import { FilterProvider } from "./context/FilterContext";
 import { CartProvider } from "./context/CartContext";
+import { WishlistProvider } from "./context/WishlistContext";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -14,7 +15,9 @@ root.render(
       <DataBaseProvider>
         <FilterProvider>
           <CartProvider>
-            <App />
+            <WishlistProvider>
+              <App />
+            </WishlistProvider>
           </CartProvider>
         </FilterProvider>
       </DataBaseProvider>

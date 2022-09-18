@@ -1,9 +1,9 @@
 .parent-positioning img {
   width: 100%;
-  height: 21rem;
+  height: 25rem;
   object-fit: cover;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
+  /* border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem; */
 }
 
 .card-container {
@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   /* gap: 1rem;
   row-gap: 1rem; */
-  max-width: 27rem;
+  max-width: 25rem;
   margin: 0 auto;
   background-color: var(--COLOR-WHITE);
   box-shadow: 0px 3px 10px var(--BOX-SHADOW-LIGHTER);

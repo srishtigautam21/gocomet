@@ -1,7 +1,10 @@
+import { Images } from "./Assets/Images/Image";
+
 const products = [
   {
     id: 1,
     type: "men",
+    image: Images.men1,
     brand: "Roadster",
     price: 555,
     category: "Men Slim Fit Casual Shirt",
@@ -10,6 +13,7 @@ const products = [
   {
     id: 2,
     type: "men",
+    image: Images.men2,
     brand: "Roadster",
     price: 2189,
     category: "Men Slim Fit Casual Shirt",
@@ -18,6 +22,7 @@ const products = [
   {
     id: 3,
     type: "men",
+    image: Images.men3,
     brand: "Arrow",
     price: 889,
     category: "Men Cotton Fit Casual Shirt",
@@ -26,6 +31,7 @@ const products = [
   {
     id: 4,
     type: "men",
+    image: Images.men4,
     brand: "ONLY",
     price: 1950,
     category: "Men Cotton Fit Casual Shirt",
@@ -34,6 +40,7 @@ const products = [
   {
     id: 5,
     type: "women",
+    image: Images.women1,
     brand: "ONLY",
     price: 789,
     category: "Women Casual Shirt",
@@ -42,6 +49,7 @@ const products = [
   {
     id: 6,
     type: "women",
+    image: Images.women2,
     brand: "Roadster",
     price: 950,
     category: "Women Casual Shirt",
@@ -50,6 +58,7 @@ const products = [
   {
     id: 7,
     type: "women",
+    image: Images.women3,
     brand: "VeroModa",
     price: 1887,
     category: "Casual Shirt",
@@ -58,6 +67,7 @@ const products = [
   {
     id: 8,
     type: "women",
+    image: Images.women4,
     brand: "VeroModa",
     price: 1350,
     category: "Casual Shirt",
@@ -66,6 +76,7 @@ const products = [
   {
     id: 9,
     type: "men",
+    image: Images.men5,
     brand: "Arrow",
     price: 1050,
     category: "Striped Casual Shirt",
@@ -74,6 +85,7 @@ const products = [
   {
     id: 10,
     type: "men",
+    image: Images.men6,
     brand: "Arrow",
     price: 2240,
     category: "Striped Casual Shirt",
@@ -82,6 +94,7 @@ const products = [
   {
     id: 11,
     type: "women",
+    image: Images.women5,
     brand: "ONLY",
     price: 2800,
     category: "High Low Casual Shirt",
@@ -90,6 +103,7 @@ const products = [
   {
     id: 12,
     type: "women",
+    image: Images.women6,
     brand: "Roadster",
     price: 2560,
     category: "High Low Casual Shirt",

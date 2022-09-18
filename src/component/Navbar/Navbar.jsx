@@ -3,12 +3,18 @@ import { CartIcon, HeartIcon } from "../../Assets/Svg/AllSvg";
 import "./Navbar.css";
 import { CartModal } from "../../pages/Modal/CartModal";
 import { useCart } from "../../context/CartContext";
+import { useWishlist } from "../../context/WishlistContext";
+import { WishlistModal } from "../../pages/Modal/WishlistModal";
 
 const Navbar = () => {
   const [openModalCart, setOpenModalCart] = useState(false);
+  const [openModalWishlist, setOpenModalWishlist] = useState(false);
   const { state } = useCart();
+  const { wishliststate } = useWishlist();
+  const { wishlistitem } = wishliststate;
   const { cartlistitem } = state;
   const totalCartQuantity = cartlistitem.length;
+  const totalWishListQuantity = wishlistitem.length;
   return (
     <div>
       <nav className='nav-component nav-padding'>
@@ -44,15 +50,21 @@ const Navbar = () => {
           <li className='list-style icons-alignment'>
             <div className='link ecom-link-color' to='/wishlist'>
               <div className='ecom-badge-wrapper'>
-                <HeartIcon className='nav-icons' />
+                <HeartIcon
+                  className='nav-icons'
+                  onClick={() => setOpenModalWishlist((open) => !open)}
+                />
                 <div className='badge icon-over-badge'>
-                  {/* {totalWishListQuantity} */}0
+                  {Number(totalWishListQuantity)}
                 </div>
               </div>
             </div>
           </li>
         </ul>
         {openModalCart && <CartModal setOpenModalCart={setOpenModalCart} />}
+        {openModalWishlist && (
+          <WishlistModal setOpenModalWishlist={setOpenModalWishlist} />
+        )}
       </nav>
     </div>
   );
