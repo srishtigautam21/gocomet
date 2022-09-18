@@ -2,10 +2,12 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  height: 90vh;
   transform: translate(-50%, -50%);
   background-color: var(--COLOR-WHITE);
   padding: 3rem;
   z-index: 500;
+  overflow-y: scroll;
 }
 .modal-background {
   position: fixed;
@@ -27,7 +29,11 @@
 }
 .horizontal-cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  overflow-y: scroll;
+
   padding: 1rem;
 }
+/* .cart-modal-container {
+  overflow-y: scroll;
+} */

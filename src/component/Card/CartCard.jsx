@@ -40,7 +40,6 @@ const CartCard = ({ product, dispatch, wishlistdispatch, wishliststate }) => {
           Remove From Cart
         </button>
       </div>
-      {/* {navigateToDetailsPage && <DetailsPage product={product} />} */}
     </div>
   );
 };

@@ -38,7 +38,7 @@
   {
     "id": 5,
     "type": "women",
-
+    "image": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/3736688/2018/3/12/11520835210627-na-8491520835210435-1.jpg",
     "brand": "ONLY",
     "price": 789,
     "category": "Women Casual Shirt",
@@ -47,8 +47,8 @@
   {
     "id": 6,
     "type": "women",
-
-    " brand": "Roadster",
+    "image": "https://m.media-amazon.com/images/I/71ejippEVoL._UY550_.jpg",
+    "brand": "Roadster",
     "price": 950,
     "category": "Women Casual Shirt",
     "sortBy": "new"
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "type": "women",
-
+    "image": "https://m.media-amazon.com/images/I/91-abqp5iIL._UL1500_.jpg",
     "brand": "VeroModa",
     "price": 1887,
     "category": "Casual Shirt",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "type": "women",
-
+    "image": "https://m.media-amazon.com/images/I/91i6jT6oZlL._UY550_.jpg",
     "brand": "VeroModa",
     "price": 1350,
     "category": "Casual Shirt",
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "type": "men",
-
+    "image": "https://m.media-amazon.com/images/I/41NnNn8qWkS.jpg",
     "brand": "Arrow",
     "price": 1050,
     "category": "Striped Casual Shirt",
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "type": "men",
-
+    "image": "https://navbharattimes.indiatimes.com/photo/88375794.cms",
     "brand": "Arrow",
     "price": 2240,
     "category": "Striped Casual Shirt",
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "type": "women",
-
+    "image": "https://rukminim1.flixcart.com/image/832/832/jvpk87k0/shirt/g/s/r/xl-fe2138-crimsoune-club-original-imafggwvzfpdvzsm.jpeg?q=70",
     "brand": "ONLY",
     "price": 2800,
     "category": "High Low Casual Shirt",
@@ -101,7 +101,7 @@
   {
     "id": 12,
     "type": "women",
-
+    "image": "https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPALLEN-SOLLY-ADIT509964DD6BB46/1562862411199_1..jpg?imwidth=282&impolicy=hq",
     "brand": "Roadster",
     "price": 2560,
     "category": "High Low Casual Shirt",

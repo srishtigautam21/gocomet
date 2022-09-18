@@ -17,6 +17,7 @@
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   row-gap: 1.5rem;
   padding: 2rem;
 }

@@ -1,11 +1,12 @@
 import { useWishlist } from "../../context/WishlistContext";
+import { useCart } from "../../context/CartContext";
 import ReactDom from "react-dom";
 import { WishlistCard } from "../../component/Card/WishlistCard";
 import "./WishlistModal.css";
 const WishlistModal = ({ setOpenModalWishlist }) => {
   const { wishliststate, wishlistdispatch } = useWishlist();
   const { wishlistitem } = wishliststate;
-
+  const { state, dispatch } = useCart();
   return ReactDom.createPortal(
     <div className='modal-background'>
       <div className='modal-container'>
@@ -17,7 +18,7 @@ const WishlistModal = ({ setOpenModalWishlist }) => {
             X
           </button>
         </div>
-        <h1 className='cart-page-header'>My Wishlist</h1>
+        <h1 className='cart-page-header'> Wishlist</h1>
         <h2 className='cart-page-header'>
           Your Wishlist has {wishlistitem.length} Items
         </h2>
@@ -30,6 +31,8 @@ const WishlistModal = ({ setOpenModalWishlist }) => {
                   product={item}
                   state={wishliststate}
                   dispatch={wishlistdispatch}
+                  cartstate={state}
+                  cartdispatch={dispatch}
                 />
               );
             })}
