@@ -41,9 +41,6 @@ const FilterProvider = ({ children }) => {
         return {
           ...state,
           filterByPrice: action.payload,
-          //   filterByPrice: state.filterByPrice.includes(action.payload)
-          //     ? state.filterByPrice.filter((i) => i !== action.payload)
-          //     : [...state.filterByPrice, action.payload],
         };
       case "SORT_BY":
         return {

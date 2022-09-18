@@ -23,20 +23,8 @@ const Navbar = () => {
           <Link to='/' className='header'>
             Fake Myntra
           </Link>
-          {/* <img src={logo} alt='logo' /> */}
         </div>
         <ul className='nav-list-items-flex'>
-          {/* <li className='list-style link-alignment home-alignment'>
-            <Link className='link ecom-link-color' to='/'>
-              Home
-            </Link>
-          </li>
-          <li className='list-style link-alignment'>
-            <Link className='link ecom-link-color' to='/products'>
-              Products
-            </Link>
-          </li> */}
-
           <li className='list-style icons-alignment'>
             <div className='link'>
               <div className='ecom-badge-wrapper'>

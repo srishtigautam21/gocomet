@@ -2,7 +2,7 @@ import { useWishlist } from "../../context/WishlistContext";
 import { useCart } from "../../context/CartContext";
 import ReactDom from "react-dom";
 import { WishlistCard } from "../../component/Card/WishlistCard";
-import "./WishlistModal.css";
+
 const WishlistModal = ({ setOpenModalWishlist }) => {
   const { wishliststate, wishlistdispatch } = useWishlist();
   const { wishlistitem } = wishliststate;
@@ -37,7 +37,6 @@ const WishlistModal = ({ setOpenModalWishlist }) => {
               );
             })}
           </div>
-          {/* {state.cartlistitem.length > 0 && <PriceCard state={state} />} */}
         </main>
       </div>
     </div>,

@@ -1,5 +1,3 @@
-import "./CartCard.css";
-
 const CartCard = ({ product, dispatch, wishlistdispatch, wishliststate }) => {
   const { brand, category, price, image } = product;
   const { wishlistitem } = wishliststate;

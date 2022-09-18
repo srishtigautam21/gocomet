@@ -35,7 +35,6 @@ const CartModal = ({ setOpenModalCart }) => {
               );
             })}
           </div>
-          {/* {state.cartlistitem.length > 0 && <PriceCard state={state} />} */}
         </main>
       </div>
     </div>,

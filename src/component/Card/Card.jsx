@@ -1,8 +1,7 @@
-// import { useState } from "react";
 import "./Card.css";
 import { useSingleProduct } from "../../context/SingleProductContext";
 import { useNavigate } from "react-router-dom";
-// import { DetailsPage } from "../../pages/DetailsPage/DetailsPage";
+
 import { useWishlist } from "../../context/WishlistContext";
 
 const Card = ({ product }) => {
@@ -11,7 +10,7 @@ const Card = ({ product }) => {
   const { brand, category, price, image } = product;
   const { wishliststate, wishlistdispatch } = useWishlist();
   const { wishlistitem } = wishliststate;
-  // const [navigateToDetailsPage, setNavigateToDetailsPage] = useState(false);
+
   const isInWishlist = wishlistitem.findIndex((item) => item.id === product.id);
   return (
     <div
@@ -48,7 +47,6 @@ const Card = ({ product }) => {
             ></i>
           )}
         </div>
-        {/* {navigateToDetailsPage && <DetailsPage product={product} />} */}
       </div>
     </div>
   );

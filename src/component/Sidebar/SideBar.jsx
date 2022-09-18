@@ -22,7 +22,7 @@ const SideBar = () => {
           Clear
         </button>
       </div>
-      {/* <h3>Price</h3> */}
+
       <div className='filter'>
         <label htmlFor='men'>
           <input

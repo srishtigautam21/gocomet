@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProductPage.css";
 import { SideBar } from "../../component/Sidebar/SideBar";
-
 import { Card } from "../../component/Card/Card";
 import { useFilterHook } from "../../component/Sidebar/useFilterHook";
 import { useDocumentTitle } from "../../useDocumentTitle";

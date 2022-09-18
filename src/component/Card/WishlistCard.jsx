@@ -40,7 +40,6 @@ const WishlistCard = ({ product, dispatch, cartdispatch, cartstate }) => {
           }
         ></i>
       </div>
-      {/* {navigateToDetailsPage && <DetailsPage product={product} />} */}
     </div>
   );
 };
